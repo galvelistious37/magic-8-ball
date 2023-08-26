@@ -28,19 +28,19 @@ function getRandoNum(){
 }
 
 $("#answer").click(function(){
-    $("#eight-ball").fadeOut(500);
+    $("#eight-ball").fadeOut(250);
     document.querySelector("p").innerHTML = responses[getRandoNum()];
     setTimeout(function(){
-        $("#response-area").fadeIn(1000);
+        $("#response-area").fadeIn(500);
     }, 500)
     $("#answer").toggle();
     $("#ask-again").toggle();
 });
 
 $("#ask-again").click(function(){
-    $("#response-area").fadeOut(500);
+    $("#response-area").fadeOut(250);
     setTimeout(function(){
-        $("#eight-ball").fadeIn(1000);
+        $("#eight-ball").fadeIn(500);
     }, 500)
     $("#answer").toggle();
     $("#ask-again").toggle();
