@@ -27,8 +27,23 @@ function getRandoNum(){
     return Math.floor(Math.random() * 20);
 }
 
-document.querySelector("button").addEventListener("click", function(){
+$("#answer").click(function(){
+    $("#eight-ball").fadeOut(500);
     document.querySelector("p").innerHTML = responses[getRandoNum()];
+    setTimeout(function(){
+        $("#response-area").fadeIn(1000);
+    }, 500)
+    $("#answer").toggle();
+    $("#ask-again").toggle();
+});
+
+$("#ask-again").click(function(){
+    $("#response-area").fadeOut(500);
+    setTimeout(function(){
+        $("#eight-ball").fadeIn(1000);
+    }, 500)
+    $("#answer").toggle();
+    $("#ask-again").toggle();
 });
 
 populateResponses();

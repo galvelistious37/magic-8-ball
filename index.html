@@ -9,19 +9,27 @@
     <link rel="icon" href="./images/favicon.png" />
 </head>
 <body>
-    <!-- Body Header/Title -->
     <div id="body-container">
+        <!-- Body Header/Title -->
         <div id="header-container">
             <img src="./images/8-ball.png" alt="8 ball" class="header-ball no-keep"/>
             <h1>Magic 8 Ball</h1>
             <img src="./images/8-ball.png" alt="8 ball" class="header-ball" />
         </div>
+        <!-- Main -->
+        <div id="main-container">
+            <h3>Ask a yes or no question</h3>
+            <div id="eight-ball-container" class="flex-display">
+                <div id="eight-ball" class="flex-display">8</div>
+                <div id="response-area" class="no-display">
+                    <p id="response">blah</p>
+                </div>
+            </div>
+            <button id="answer" class="btn">Answer</button>
+            <button id="ask-again" class="btn no-display">Ask again</button>
+        </div>
     </div>
-    <!-- Main -->
-    <div id="main-container">
-        <p id="blah">blah</p>
-        <button>blah button</button>
-    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="./js/index.js"></script>
 </body>
 </html>

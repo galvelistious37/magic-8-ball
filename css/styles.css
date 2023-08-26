@@ -23,6 +23,62 @@ body {
     height: 150px;
 }
 
+#main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #212121;
+    height: 80vh;
+    text-align: center;
+    color: white;
+    font-family: 'Cinzel', 'Times New Roman', Times, serif;
+}
+
+#eight-ball-container{
+    background-color: black;
+    box-shadow: 0 0 30px white;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}
+
+#eight-ball {
+    font-size: 4rem;
+    font-weight: 900;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+
+  }
+
+#response-area{
+    text-shadow: -2px 0 rgb(65, 118, 164), 0 2px rgb(65, 118, 164), 2px 0 rgb(65, 118, 164), 0 -2px rgb(65, 118, 164);
+    font-size: 14pt;
+    width: 200px;
+}
+
+.no-display {
+    display: none;
+}
+
+.flex-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    font-family: 'Cinzel', 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
 @media (max-width: 680px){
     #header-container {
         flex-direction: column;
